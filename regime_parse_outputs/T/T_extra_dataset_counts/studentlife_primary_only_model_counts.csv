@@ -1,0 +1,21 @@
+,Count
+Random Forest,10
+LSTM,7
+Logistic Regression,5
+Transformer,5
+Decision Tree,4
+Ensemble,3
+Linear Regression,3
+CNN,2
+Graph neural network,2
+LASSO,2
+XGBoost,2
+Autoencoder,1
+Federated Learning,1
+Generalized Estimating Equations,1
+Joint Model,1
+Reinforcement Learning,1
+RNN,1
+Support Vector Machine,1
+TCN,1
+Papers (N),53

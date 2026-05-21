@@ -1,0 +1,15 @@
+,Count
+Random Forest,8
+Ensemble,7
+Linear Regression,4
+LSTM,4
+LightGBM,2
+Transformer,2
+XGBoost,2
+Autoencoder,1
+CNN,1
+DNN,1
+Graph neural network,1
+GRU,1
+Reinforcement Learning,1
+Papers (N),35

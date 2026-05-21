@@ -1,0 +1,15 @@
+,Count
+Linear Regression,31
+Logistic Regression,30
+Transformer,16
+Cox Proportional Hazards,13
+Mixed-Effects Model,3
+Random Forest,3
+Generalized Estimating Equations,2
+LASSO,2
+XGBoost,2
+DNN,1
+Elastic Net,1
+Kaplan–Meier,1
+MLP,1
+Papers (N),84

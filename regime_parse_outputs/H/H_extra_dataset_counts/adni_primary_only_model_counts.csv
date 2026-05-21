@@ -1,0 +1,23 @@
+,Count
+CNN,32
+Support Vector Machine,28
+Linear Regression,19
+Logistic Regression,17
+Ensemble,13
+Random Forest,13
+LASSO,4
+Transformer,4
+Autoencoder,3
+Decision Tree,3
+AdaBoost,2
+Cox Proportional Hazards,2
+DNN,1
+Joint Model,1
+Kaplan–Meier,1
+LSTM,1
+Mixed-Effects Model,1
+MLP,1
+Naive Bayes,1
+Ridge Regression,1
+RNN,1
+Papers (N),149

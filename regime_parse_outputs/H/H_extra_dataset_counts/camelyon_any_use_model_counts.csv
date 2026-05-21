@@ -1,0 +1,26 @@
+,Count
+DNN,111
+Transformer,91
+CNN,90
+Ensemble,16
+Graph neural network,12
+MLP,12
+Random Forest,11
+Autoencoder,9
+Support Vector Machine,9
+Logistic Regression,8
+RNN,7
+Federated Learning,6
+Decision Tree,5
+LSTM,5
+k-Nearest Neighbors,4
+Reinforcement Learning,4
+AdaBoost,3
+Gradient Boosting,3
+XGBoost,3
+Cox Proportional Hazards,2
+GRU,2
+Joint Model,1
+Kaplan–Meier,1
+LightGBM,1
+Papers (N),201

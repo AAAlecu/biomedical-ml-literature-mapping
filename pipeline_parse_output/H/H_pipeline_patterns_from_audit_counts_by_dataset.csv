@@ -1,0 +1,7 @@
+,ADNI,CAMELYON,GTEx,TCGA,UKBio,Total
+Handcrafted feature pipelines,60.0,27.0,12.0,28.0,26.0,153
+Learned representation pipelines,46.0,73.0,12.0,17.0,31.0,179
+Fusion-centric architectures,15.0,17.0,0.0,4.0,2.0,38
+Sequential predictive pipelines,17.0,14.0,8.0,8.0,11.0,58
+Robust / transfer-aware pipelines,5.0,13.0,1.0,0.0,1.0,20
+Papers (N),245.0,201.0,184.0,194.0,187.0,1011

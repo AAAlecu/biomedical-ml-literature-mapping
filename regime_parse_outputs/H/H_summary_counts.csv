@@ -1,0 +1,6 @@
+dataset,provided,used_any,used_primary
+adni,350,245,149
+camelyon,350,201,98
+gtex,350,184,108
+tcga,350,194,100
+ukb_imaging,350,187,103

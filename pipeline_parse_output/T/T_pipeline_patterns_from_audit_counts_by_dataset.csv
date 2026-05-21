@@ -1,0 +1,7 @@
+,ADNI,eICU,ELSA,HRS,MIDUS,MIMIC,mPower,NHANES,NOAA,OpenAQ,RADAR-CNS,StudentLife,Total
+Handcrafted feature pipelines,47.0,46.0,8.0,0.0,1.0,77.0,34.0,1.0,0.0,6.0,19.0,29.0,268
+Learned representation pipelines,30.0,15.0,2.0,0.0,1.0,22.0,15.0,0.0,0.0,4.0,6.0,18.0,113
+Fusion-centric architectures,10.0,6.0,0.0,0.0,0.0,1.0,2.0,0.0,0.0,1.0,2.0,8.0,30
+Sequential predictive pipelines,17.0,14.0,4.0,0.0,0.0,16.0,8.0,0.0,0.0,5.0,4.0,8.0,76
+Robust / transfer-aware pipelines,4.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,4.0,10
+Papers (N),172.0,226.0,188.0,59.0,57.0,227.0,115.0,40.0,57.0,62.0,106.0,87.0,1396

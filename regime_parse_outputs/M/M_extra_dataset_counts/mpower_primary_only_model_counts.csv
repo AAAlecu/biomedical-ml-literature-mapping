@@ -1,0 +1,19 @@
+,Count
+Random Forest,12
+Logistic Regression,10
+CNN,5
+Ensemble,5
+Decision Tree,4
+Linear Regression,4
+Kalman Filter,2
+Transformer,2
+XGBoost,2
+ARIMA,1
+Autoencoder,1
+Cox Proportional Hazards,1
+DNN,1
+Elastic Net,1
+Gradient Boosting,1
+LightGBM,1
+Support Vector Machine,1
+Papers (N),54

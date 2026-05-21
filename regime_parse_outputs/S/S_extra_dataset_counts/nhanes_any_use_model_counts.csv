@@ -1,0 +1,21 @@
+,Count
+Logistic Regression,58
+Linear Regression,24
+Cox Proportional Hazards,18
+Transformer,13
+Random Forest,7
+DNN,3
+Kaplan–Meier,3
+Bayesian Regression,2
+Decision Tree,2
+Ensemble,2
+LASSO,2
+Support Vector Machine,2
+CatBoost,1
+Elastic Net,1
+Generalized Estimating Equations,1
+Gradient Boosting,1
+MLP,1
+Ridge Regression,1
+XGBoost,1
+Papers (N),95

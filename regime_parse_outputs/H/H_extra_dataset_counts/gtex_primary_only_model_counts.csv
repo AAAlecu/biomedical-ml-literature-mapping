@@ -1,0 +1,22 @@
+,Count
+Linear Regression,27
+LASSO,21
+Cox Proportional Hazards,11
+Logistic Regression,11
+Kaplan–Meier,10
+Elastic Net,7
+Random Forest,4
+Ensemble,3
+Autoencoder,2
+GRU,2
+Bayesian Regression,1
+CNN,1
+Decision Tree,1
+Graph neural network,1
+Hidden Markov Model,1
+LSTM,1
+MLP,1
+Naive Bayes,1
+Support Vector Machine,1
+Transformer,1
+Papers (N),108

@@ -1,0 +1,33 @@
+,Count
+Kaplan–Meier,114
+Cox Proportional Hazards,102
+Transformer,51
+DNN,36
+LASSO,35
+Logistic Regression,29
+Random Forest,24
+Ensemble,21
+Support Vector Machine,21
+Decision Tree,20
+CNN,17
+Linear Regression,14
+Gradient Boosting,9
+XGBoost,9
+Autoencoder,7
+k-Nearest Neighbors,7
+Graph neural network,5
+Elastic Net,4
+MLP,4
+Random Survival Forest,4
+Bayesian Regression,3
+CatBoost,2
+Extra Trees,2
+Ridge Regression,2
+RNN,2
+AdaBoost,1
+Federated Learning,1
+Joint Model,1
+Mixed-Effects Model,1
+Naive Bayes,1
+Reinforcement Learning,1
+Papers (N),194

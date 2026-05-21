@@ -1,0 +1,21 @@
+,Count
+Logistic Regression,12
+Linear Regression,10
+Random Forest,9
+CNN,8
+Ensemble,6
+Cox Proportional Hazards,3
+Decision Tree,3
+Transformer,3
+ARIMA,2
+LASSO,2
+XGBoost,2
+Autoencoder,1
+DNN,1
+Elastic Net,1
+Federated Learning,1
+Kalman Filter,1
+LightGBM,1
+Naive Bayes,1
+Support Vector Machine,1
+Papers (N),68

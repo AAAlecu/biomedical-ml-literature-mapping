@@ -1,0 +1,7 @@
+,ADNI,GTEx,MIDUS,mPower,NHANES,RADAR-CNS,StudentLife,TCGA,UKBio,Total
+Handcrafted feature pipelines,41.2,11.5,0.0,40.2,0.0,24.3,35.1,30.8,22.0,31.6
+Learned representation pipelines,28.9,3.8,0.0,13.4,0.0,8.1,24.3,13.5,33.0,20.5
+Fusion-centric architectures,13.4,0.0,0.0,4.1,0.0,4.1,8.1,9.6,5.0,7.0
+Sequential predictive pipelines,17.5,11.5,0.0,8.2,0.0,4.1,5.4,9.6,7.0,8.7
+Robust / transfer-aware pipelines,5.2,0.0,0.0,2.1,0.0,0.0,4.5,0.0,3.0,2.7
+Papers (N),97.0,26.0,2.0,97.0,2.0,74.0,111.0,52.0,100.0,561.0

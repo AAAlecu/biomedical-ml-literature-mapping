@@ -1,0 +1,24 @@
+,Count
+Logistic Regression,42
+Cox Proportional Hazards,23
+XGBoost,22
+Random Forest,10
+Ensemble,9
+LASSO,9
+Transformer,7
+Federated Learning,3
+Graph neural network,3
+Reinforcement Learning,3
+Autoencoder,2
+CatBoost,2
+Linear Regression,2
+LSTM,2
+Random Survival Forest,2
+AdaBoost,1
+CNN,1
+GRU,1
+Kaplan–Meier,1
+Markov Model,1
+Mixed-Effects Model,1
+RNN,1
+Papers (N),148

@@ -1,0 +1,33 @@
+,Count
+Transformer,80
+Cox Proportional Hazards,62
+Kaplan–Meier,60
+LASSO,46
+Linear Regression,45
+Logistic Regression,35
+DNN,34
+Random Forest,26
+Mixed-Effects Model,18
+Support Vector Machine,18
+Elastic Net,17
+Ensemble,15
+Bayesian Regression,14
+CNN,11
+Autoencoder,10
+Ridge Regression,10
+k-Nearest Neighbors,7
+Hidden Markov Model,5
+Decision Tree,4
+GRU,4
+Markov Model,4
+Graph neural network,3
+Joint Model,3
+MLP,3
+Random Survival Forest,2
+ARIMA,1
+Gradient Boosting,1
+LSTM,1
+Naive Bayes,1
+RNN,1
+XGBoost,1
+Papers (N),184

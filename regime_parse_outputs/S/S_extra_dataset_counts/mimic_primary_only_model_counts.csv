@@ -1,0 +1,24 @@
+,Count
+Logistic Regression,29
+XGBoost,25
+Random Forest,15
+Cox Proportional Hazards,10
+LSTM,10
+Ensemble,8
+Gradient Boosting,7
+CNN,6
+LASSO,6
+RNN,6
+Transformer,6
+CatBoost,5
+Support Vector Machine,5
+Decision Tree,4
+Kaplan–Meier,4
+LightGBM,3
+AdaBoost,2
+Linear Regression,2
+DNN,1
+Federated Learning,1
+Graph neural network,1
+Reinforcement Learning,1
+Papers (N),157

@@ -1,0 +1,10 @@
+,adni,camelyon,gtex,tcga,ukb_imaging,Total
+Linear / GLM,45.7,4.0,83.2,43.3,73.3,48.9
+Deep learning,130.2,168.7,79.9,62.9,128.9,115.5
+Survival models,10.2,2.0,69.0,113.9,17.1,40.5
+Tree-based ensemble,36.3,10.4,15.2,24.2,26.7,23.2
+Kernel / instance-based,43.3,6.5,13.6,14.4,11.8,19.2
+Other classical ML,11.4,7.5,2.2,11.3,5.9,7.9
+Probabilistic / statistical,14.3,0.0,23.4,2.6,15.0,11.0
+Ensemble / stacking,22.4,8.0,8.2,10.8,16.6,13.6
+Papers (N),245.0,201.0,184.0,194.0,187.0,1011.0

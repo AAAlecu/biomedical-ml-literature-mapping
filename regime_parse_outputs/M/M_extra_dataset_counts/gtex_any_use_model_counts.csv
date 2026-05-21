@@ -1,0 +1,21 @@
+,Count
+Transformer,13
+Kaplan–Meier,9
+DNN,7
+LASSO,7
+Linear Regression,7
+Cox Proportional Hazards,6
+Logistic Regression,6
+Ensemble,5
+Random Forest,5
+Support Vector Machine,5
+Bayesian Regression,3
+Autoencoder,2
+CNN,2
+Graph neural network,2
+Elastic Net,1
+Joint Model,1
+k-Nearest Neighbors,1
+Mixed-Effects Model,1
+Ridge Regression,1
+Papers (N),26

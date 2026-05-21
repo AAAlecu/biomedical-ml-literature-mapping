@@ -1,0 +1,10 @@
+dataset,provided,used_any,used_primary
+adni,350,97,53
+gtex,444,26,13
+midus,208,2,0
+mpower,545,97,54
+nhanes,179,2,1
+radar_cns,399,74,33
+studentlife,329,111,70
+tcga,608,52,27
+ukb_imaging,563,100,55

@@ -1,0 +1,13 @@
+dataset,provided,used_any,used_primary
+adni,350,172,117
+eicu,350,226,148
+elsa,350,188,147
+hrs,242,59,43
+midus,208,57,35
+mimic,350,227,130
+mpower,350,115,68
+nhanes,179,40,32
+noaa,628,57,46
+openaq,136,62,35
+radar_cns,399,106,46
+studentlife,328,87,53

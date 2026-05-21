@@ -1,0 +1,10 @@
+dataset,provided,used_any,used_primary
+eicu,350,263,164
+elsa,350,175,135
+hrs,242,71,50
+midus,208,84,62
+mimic,350,290,157
+nhanes,179,95,79
+noaa,628,29,19
+openaq,136,35,20
+ukb_imaging,563,371,196

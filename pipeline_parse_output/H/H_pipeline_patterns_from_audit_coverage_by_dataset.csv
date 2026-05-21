@@ -1,0 +1,6 @@
+dataset,accessible_papers,assessable_text_papers,papers_with_at_least_one_pattern,assessable_over_accessible_percent,any_pattern_over_assessable_percent
+ADNI,245,245,98,100.0,40.0
+CAMELYON,201,201,95,100.0,47.3
+GTEx,184,184,27,100.0,14.7
+TCGA,194,194,41,100.0,21.1
+UKBio,187,187,51,100.0,27.3

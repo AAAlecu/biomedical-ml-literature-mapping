@@ -1,0 +1,10 @@
+,adni,gtex,mpower,nhanes,radar_cns,studentlife,tcga,ukb_imaging,Total
+Linear / GLM,22.6,53.8,27.8,0.0,15.2,18.6,25.9,54.5,29.1
+Deep learning,24.5,7.7,16.7,0.0,18.2,32.9,11.1,25.5,22.5
+Survival models,5.7,30.8,1.9,0.0,9.1,2.9,29.6,3.6,7.5
+Tree-based ensemble,15.1,0.0,29.6,0.0,12.1,20.0,14.8,10.9,17.0
+Kernel / instance-based,13.2,0.0,1.9,0.0,9.1,2.9,7.4,0.0,4.9
+Other classical ML,1.9,0.0,7.4,100.0,6.1,15.7,3.7,1.8,6.9
+Probabilistic / statistical,1.9,0.0,5.6,0.0,15.2,2.9,0.0,0.0,3.6
+Ensemble / stacking,15.1,7.7,9.3,0.0,15.2,4.3,7.4,3.6,8.5
+Papers (N),53.0,13.0,54.0,1.0,33.0,70.0,27.0,55.0,306.0

@@ -1,0 +1,18 @@
+,Count
+Linear Regression,15
+Logistic Regression,10
+Transformer,5
+CNN,4
+Random Forest,4
+Autoencoder,3
+Cox Proportional Hazards,2
+Ensemble,2
+LASSO,2
+Ridge Regression,2
+CatBoost,1
+DNN,1
+Elastic Net,1
+Federated Learning,1
+Gradient Boosting,1
+MLP,1
+Papers (N),55

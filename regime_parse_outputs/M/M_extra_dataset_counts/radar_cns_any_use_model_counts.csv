@@ -1,0 +1,38 @@
+,Count
+DNN,34
+Transformer,33
+Random Forest,26
+Ensemble,19
+Support Vector Machine,17
+CNN,16
+Logistic Regression,13
+Autoencoder,9
+Linear Regression,9
+Decision Tree,7
+LSTM,7
+RNN,7
+Kalman Filter,6
+Hidden Markov Model,5
+Markov Model,5
+Mixed-Effects Model,5
+MLP,5
+Generalized Estimating Equations,4
+Gradient Boosting,4
+Kaplan–Meier,4
+LASSO,4
+XGBoost,4
+Cox Proportional Hazards,3
+AdaBoost,2
+Elastic Net,2
+Federated Learning,2
+Joint Model,2
+k-Nearest Neighbors,2
+Naive Bayes,2
+Reinforcement Learning,2
+Bayesian Regression,1
+Graph neural network,1
+LightGBM,1
+Random Survival Forest,1
+Ridge Regression,1
+TCN,1
+Papers (N),74

@@ -1,0 +1,27 @@
+,Count
+Linear Regression,47
+Logistic Regression,39
+CNN,28
+Cox Proportional Hazards,16
+Random Forest,12
+Transformer,9
+Autoencoder,8
+Ensemble,6
+LASSO,4
+Elastic Net,3
+Support Vector Machine,3
+XGBoost,3
+Bayesian Regression,2
+DNN,2
+Federated Learning,2
+Kaplan–Meier,2
+Ridge Regression,2
+CatBoost,1
+Decision Tree,1
+Gradient Boosting,1
+GRU,1
+Hidden Markov Model,1
+k-Nearest Neighbors,1
+Mixed-Effects Model,1
+MLP,1
+Papers (N),196
