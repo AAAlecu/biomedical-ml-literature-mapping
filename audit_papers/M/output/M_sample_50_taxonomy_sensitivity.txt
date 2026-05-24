@@ -1,0 +1,123 @@
+Taxonomy sensitivity analysis report (M)
+===========================================
+Audited papers (N): 50
+
+Scope note
+----------
+This sensitivity analysis uses the already selected manually annotated audit sample.
+It tests sensitivity of model extraction, exact-model mapping, model-family aggregation,
+and dominant-family assignment.
+
+Hard-coded model-family taxonomy
+--------------------------------
+Deep learning: Autoencoder, CNN, DNN, GRU, Graph neural network, LSTM, MLP, RNN, TCN, Transformer
+Ensemble / stacking: Ensemble
+Kernel / instance-based: Support Vector Machine, k-Nearest Neighbors
+Linear / GLM: Elastic Net, LASSO, Linear Regression, Logistic Regression, Ridge Regression
+Other classical ML: Decision Tree, Federated Learning, Reinforcement Learning
+Probabilistic / statistical: ARIMA, Bayesian Regression, Generalized Estimating Equations, Hidden Markov Model, Kalman Filter, Markov Model, Mixed-Effects Model, Naive Bayes
+Survival models: Cox Proportional Hazards, Joint Model, Kaplan-Meier, Random Survival Forest
+Tree-based ensemble: AdaBoost, CatBoost, Extra Trees, Gradient Boosting, LightGBM, Random Forest, XGBoost
+
+Baseline validation metrics
+---------------------------
+A_dom:       0.700 (70.0%)
+A*_dom:      0.854 (85.4%)
+R_amb:       0.180 (18.0%)
+Ambiguous:   9/50
+Nonambiguous denominator for A*_dom: 41
+
+Prevalence-oriented model-family extraction, micro-averaged
+P_fam:       0.860
+R_fam:       0.895
+F1_fam:      0.877
+TP / FP / FN: 111 / 18 / 13
+Exact family-set match rate: 66.0%
+
+Exact-model extraction, micro-averaged
+P_model:     0.792
+R_model:     0.850
+F1_model:    0.820
+TP / FP / FN: 164 / 43 / 29
+
+Manual-audit text source coverage
+---------------------------------
+PDF used:             39/50 (78.0%)
+Title/abstract used:  11/50 (22.0%)
+
+Sensitivity 1: leave-one-family-out automated prediction ablation
+-----------------------------------------------------------------
+Each row removes one family from automated predictions only, then recomputes metrics.
+Manual gold labels are not altered. Large negative deltas indicate dependence on that family rule group.
+
+removed_family                     A_dom      dA   P_fam      dP   R_fam      dR      F1     dF1     TP/FP/FN
+-------------------------------------------------------------------------------------------------------------
+Deep learning                      0.460  -0.240   0.891   0.031   0.726  -0.169   0.800  -0.077 90/11/34   
+Ensemble / stacking                0.680  -0.020   0.850  -0.011   0.774  -0.121   0.810  -0.067 96/17/28   
+Kernel / instance-based            0.660  -0.040   0.870   0.009   0.806  -0.089   0.837  -0.041 100/15/24   
+Linear / GLM                       0.580  -0.120   0.845  -0.015   0.750  -0.145   0.795  -0.083 93/17/31   
+Other classical ML                 0.680  -0.020   0.863   0.003   0.815  -0.081   0.838  -0.039 101/16/23   
+Probabilistic / statistical        0.660  -0.040   0.850  -0.010   0.823  -0.073   0.836  -0.041 102/18/22   
+Survival models                    0.600  -0.100   0.858  -0.002   0.831  -0.065   0.844  -0.033 103/17/21   
+Tree-based ensemble                0.580  -0.120   0.860  -0.001   0.742  -0.153   0.797  -0.081 92/15/32   
+
+Sensitivity 2: leave-one-exact-model-out automated prediction ablation
+---------------------------------------------------------------------
+Each row removes one exact model from automated model predictions and remaps remaining models to families.
+The table is sorted by the absolute change in family-level F1.
+
+removed_model                    family                         A_dom      dA   P_fam   R_fam      F1     dF1     TP/FP/FN
+--------------------------------------------------------------------------------------------------------------------------
+Ensemble                         Ensemble / stacking            0.680  -0.020   0.850   0.774   0.810  -0.067 96/17/28   
+Random Forest                    Tree-based ensemble            0.600  -0.100   0.871   0.815   0.842  -0.036 101/15/23   
+Decision Tree                    Other classical ML             0.700   0.000   0.858   0.831   0.844  -0.033 103/17/21   
+Linear Regression                Linear / GLM                   0.640  -0.060   0.854   0.847   0.850  -0.027 105/18/19   
+Support Vector Machine           Kernel / instance-based        0.660  -0.040   0.873   0.831   0.851  -0.026 103/15/21   
+Logistic Regression              Linear / GLM                   0.680  -0.020   0.862   0.855   0.858  -0.019 106/17/18   
+XGBoost                          Tree-based ensemble            0.680  -0.020   0.857   0.871   0.864  -0.013 108/18/16   
+Mixed-Effects Model              Probabilistic / statistical    0.700   0.000   0.857   0.871   0.864  -0.013 108/18/16   
+Autoencoder                      Deep learning                  0.680  -0.020   0.859   0.887   0.873  -0.004 110/18/14   
+LSTM                             Deep learning                  0.660  -0.040   0.859   0.887   0.873  -0.004 110/18/14   
+MLP                              Deep learning                  0.680  -0.020   0.859   0.887   0.873  -0.004 110/18/14   
+Joint Model                      Survival models                0.680  -0.020   0.859   0.887   0.873  -0.004 110/18/14   
+Kaplan-Meier                     Survival models                0.660  -0.040   0.859   0.887   0.873  -0.004 110/18/14   
+ARIMA                            Probabilistic / statistical    0.700   0.000   0.859   0.887   0.873  -0.004 110/18/14   
+Generalized Estimating Equations Probabilistic / statistical    0.680  -0.020   0.859   0.887   0.873  -0.004 110/18/14   
+Kalman Filter                    Probabilistic / statistical    0.680  -0.020   0.859   0.887   0.873  -0.004 110/18/14   
+Markov Model                     Probabilistic / statistical    0.700   0.000   0.859   0.887   0.873  -0.004 110/18/14   
+Federated Learning               Other classical ML             0.680  -0.020   0.859   0.887   0.873  -0.004 110/18/14   
+Reinforcement Learning           Other classical ML             0.700   0.000   0.867   0.895   0.881   0.003 111/17/13   
+DNN                              Deep learning                  0.660  -0.040   0.879   0.879   0.879   0.002 109/15/15   
+Transformer                      Deep learning                  0.640  -0.060   0.879   0.879   0.879   0.002 109/15/15   
+Cox Proportional Hazards         Survival models                0.660  -0.040   0.866   0.887   0.876  -0.001 110/17/14   
+CNN                              Deep learning                  0.640  -0.060   0.860   0.895   0.877   0.000 111/18/13   
+GRU                              Deep learning                  0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Graph neural network             Deep learning                  0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+RNN                              Deep learning                  0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+TCN                              Deep learning                  0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+AdaBoost                         Tree-based ensemble            0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+CatBoost                         Tree-based ensemble            0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Extra Trees                      Tree-based ensemble            0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Gradient Boosting                Tree-based ensemble            0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+LightGBM                         Tree-based ensemble            0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Elastic Net                      Linear / GLM                   0.680  -0.020   0.860   0.895   0.877   0.000 111/18/13   
+LASSO                            Linear / GLM                   0.680  -0.020   0.860   0.895   0.877   0.000 111/18/13   
+Ridge Regression                 Linear / GLM                   0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+k-Nearest Neighbors              Kernel / instance-based        0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Random Survival Forest           Survival models                0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Bayesian Regression              Probabilistic / statistical    0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Hidden Markov Model              Probabilistic / statistical    0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+Naive Bayes                      Probabilistic / statistical    0.700   0.000   0.860   0.895   0.877   0.000 111/18/13   
+
+Sensitivity 3: family-collapse taxonomy scenarios
+-------------------------------------------------
+These scenarios apply the same coarser taxonomy to automated and manual labels.
+They test whether conclusions depend on fine distinctions among adjacent model families.
+
+scenario                         A_dom      A*   P_fam   R_fam      F1     TP/FP/FN
+-----------------------------------------------------------------------------------
+baseline_no_collapse             0.700   0.854   0.860   0.895   0.877 111/18/13   
+classical_ml_collapsed           0.740   0.902   0.874   0.918   0.896 90/13/8    
+tree_and_ensemble_collapsed      0.720   0.878   0.855   0.922   0.887 94/16/8    
+survival_with_linear_glm         0.720   0.878   0.865   0.893   0.879 109/17/13   
+all_non_deep_collapsed           0.780   0.951   0.875   0.955   0.913 63/9/3

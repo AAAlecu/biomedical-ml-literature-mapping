@@ -42,6 +42,17 @@ regime_parse_outputs/
 pipeline_parse_output/
     Outputs from pipeline-architecture pattern parsing.
 
+validation_outputs/
+    Manual audit CSVs, validation reports, and taxonomy sensitivity outputs.
+
+compute_manual_audit_metrics.py
+    Computes dominant-family and prevalence-oriented validation metrics from
+    manually annotated audit subsets.
+
+compute_taxonomy_sensitivity.py
+    Evaluates robustness to alternative coarser model-family taxonomies using
+    taxonomy-collapse sensitivity analyses.
+
 suplimentary/
     Supplementary documentation and rule descriptions.
 
@@ -197,9 +208,49 @@ Because any-use and pipeline-pattern analyses allow multiple labels per paper, p
 
 ---
 
+
+---
+
+# Step 4: Manual audit validation and taxonomy sensitivity analysis
+
+Manual audit validation was performed on randomly sampled regime-specific audit subsets (50 papers per regime) drawn from the final analyzed corpora after computational relevance filtering. Manual annotations included dominant model families, dominant exact models, ambiguity flags, and all identifiable model families present within each paper.
+
+Validation metrics include:
+
+- dominant-family accuracy;
+- ambiguity-aware dominant-family accuracy;
+- ambiguity rates;
+- micro-averaged precision, recall, and F1 for prevalence-oriented multi-label model-family extraction.
+
+Random sample and retrieve audit papers for manual inspection using;
+
+```bash
+python sample_and_retrieve_audit_papers.py --regime S --audit-log ./regime_parse_outputs/S/S_paper_audit_log.csv --openalex-dir ./query_outputs/S --output-dir ./audit_papers/S
+```
+
+Taxonomy robustness analyses evaluate sensitivity to alternative coarser model-family definitions by simultaneously collapsing automated and manually annotated labels into broader aggregate categories.
+
+Run taxonomy sensitivity analysis and compute validation metrics using:
+
+```bash
+python compute_validation_metrics.py --input H_sample_50.csv --output H_sensitivity_report.txt
+```
+
+where H_sample_50.csv is for instance the output file generated at the previous step, after it has been annotated manually. Already annoted files are available in the ./audit_papers/ directory
+
+Sensitivity analyses include:
+
+- collapsing multiple classical ML families into broader categories;
+- merging ensemble-oriented families;
+- merging survival and linear/statistical families;
+- collapsing all non-deep-learning families into a single category.
+
+The resulting reports summarize robustness of prevalence-oriented extraction metrics to alternative taxonomy definitions.
+
+
 ## Reproducibility notes
 
-The framework is rule-based and uses curated keyword libraries, regex pattern sets, model-family mappings, and heuristic dominant-model assignment rules. These rules are encoded directly in the source scripts and documented in the supplementary materials.
+The framework is rule-based and uses curated keyword libraries, regex pattern sets, model-family mappings, heuristic dominant-model assignment rules, manually audited validation subsets, and taxonomy-sensitivity analyses. These rules and validation procedures are encoded directly in the source scripts and documented in the supplementary materials.
 
 The outputs in this repository allow the analyses to be checked at multiple levels:
 
@@ -208,7 +259,10 @@ The outputs in this repository allow the analyses to be checked at multiple leve
 - detected model and family assignments;
 - dominant-model assignment outcomes;
 - architecture-pattern detections;
-- prevalence/count tables.
+- prevalence/count tables;
+- manually annotated audit subsets;
+- validation metrics and ambiguity analyses;
+- taxonomy-collapse sensitivity-analysis reports.
 
 ---
 
